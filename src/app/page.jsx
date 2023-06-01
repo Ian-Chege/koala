@@ -3,6 +3,6 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <div>Welcome back!</div>
+    <div className={styles.cointainer}>Welcome back!</div>
   )
 }
