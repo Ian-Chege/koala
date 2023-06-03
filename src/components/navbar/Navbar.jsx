@@ -1,8 +1,11 @@
 'use client'
+
 import React from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+
+import Logo from 'public/logo.jpg'
 
 const links = [
     {
@@ -40,7 +43,7 @@ const links = [
 const Navbar = () => {
   return (
     <div className={styles.container}>
-        <Image alt='logo' src='/koala.jpg' height={60} width={60} style={{borderRadius:'40% / 50%'}}/>
+        <Image alt='logo' src={Logo} className={styles.img}/>
         {/* <Link href="/" className={styles.logo}>Koala</Link>  */}
         <div className={styles.links}>
             {links.map((link) =>(
